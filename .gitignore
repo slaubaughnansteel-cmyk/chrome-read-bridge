@@ -1,0 +1,26 @@
+# 依赖与构建产物
+node_modules/
+dist/
+build/
+
+# 日志与临时文件
+*.log
+npm-debug.log*
+*.tmp
+*.temp
+
+# 编辑器与系统文件
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 本地运行产物：桥不落盘，但避免误提交捕获数据
+captures/
+*.capture.json
+
+# 环境变量（切勿提交凭据）
+.env
+.env.*
+!.env.example

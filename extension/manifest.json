@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "WorkBuddy 页面读取桥",
+  "version": "1.0.0",
+  "description": "在你已登录的 Chrome 中读取页面正文，通过本地回环桥回传给 WorkBuddy。只读正文，不读取 Cookie 与凭据。",
+  "permissions": [
+    "tabs",
+    "scripting",
+    "alarms",
+    "storage"
+  ],
+  "host_permissions": [
+    "http://127.0.0.1:8787/*",
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "WorkBuddy 页面读取桥"
+  }
+}
